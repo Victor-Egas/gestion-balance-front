@@ -1,0 +1,21 @@
+<div style="padding: 50px;">
+    <h1 class="text-center">LISTADO DE SOCIOS</h1>
+    <table class="table table-hover">
+        <thead class="table-danger">
+            <tr>
+                <th scope="col">CODIGO</th>
+                <th scope="col">NOMBRE COMPLETO</th>
+            </tr>    
+        </thead>
+        <tbody>
+            @for (item of partners; track $index) {
+            <tr>
+                <td>{{item.partnerId}}</td>   
+                <td>{{item.partnerName}}</td>   
+            </tr>
+        }
+        </tbody>
+
+    </table>
+</div>
+
