@@ -1,21 +1,28 @@
-<div style="padding: 50px;">
-    <h1 class="text-center">LISTADO DE SOCIOS</h1>
-    <table class="table table-hover">
-        <thead class="table-danger">
-            <tr>
-                <th scope="col">CODIGO</th>
-                <th scope="col">NOMBRE COMPLETO</th>
-            </tr>    
+<div style="padding: 20px 20px 20px 20px;">
+    <h1 style="text-align: center;" class="titillium-web-light"> Listado de Socios </h1>
+    <table class="table table-striped, titillium-web-light">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre Completo</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
         </thead>
         <tbody>
             @for (item of partners; track $index) {
-            <tr>
-                <td>{{item.partnerId}}</td>   
-                <td>{{item.partnerName}}</td>   
-            </tr>
+          <tr>
+            <td>#</td>
+            <td>{{item.partnerId}}</td>   
+            <td>{{item.partnerName}}</td>
+            <td><button type="button" class="btn btn-outline-dark">Pagar</button></td>
+            <td><button type="button" class="btn btn-outline-dark">Deudas</button></td>
+          </tr>
         }
+          
         </tbody>
-
-    </table>
+      </table>
+      
 </div>
 
