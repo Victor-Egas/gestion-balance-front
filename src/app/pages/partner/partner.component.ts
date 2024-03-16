@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PartnerService } from '../../service/partner.service';
 import { Partner } from '../../model/partner';
+import { Console } from 'node:console';
 
 @Component({
   selector: 'app-partner',
@@ -23,5 +24,9 @@ export class PartnerComponent implements OnInit{
         console.log(err)
       }
     });
+    }
+
+    mostrarDeudas(idPartner : Number | undefined) {
+      console.log("El id es : "+idPartner);
     }
 }

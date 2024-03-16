@@ -16,8 +16,8 @@
             <td>#</td>
             <td>{{item.partnerId}}</td>   
             <td>{{item.partnerName}}</td>
-            <td><button type="button" class="btn btn-outline-dark">Pagar</button></td>
-            <td><button type="button" class="btn btn-outline-dark">Deudas</button></td>
+            <td><button type="button" class="btn btn-outline-dark" >Pagar</button></td>
+            <td><button type="button" class="btn btn-outline-dark" (click)="mostrarDeudas(item.partnerId)">Deudas</button></td>
           </tr>
         }
           
